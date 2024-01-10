@@ -8,12 +8,13 @@ WORKDIR /usr/src/app
 COPY . .
 
 # Install any needed packages specified in requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
-
+RUN pip install --no-cache-dir -r requirements.txt 
 # Install g++, Cython, and Eigen
 RUN apt-get update && apt-get install -y \
     g++ \
-    libeigen3-dev
+    libeigen3-dev \
+    nano \
+    gdb
 
 # Make port 80 available to the world outside this container
 EXPOSE 80

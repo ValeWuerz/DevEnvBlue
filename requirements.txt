@@ -1,0 +1,8 @@
+uvicorn
+pandas
+numpy
+matplotlib
+scipy
+cython
+fastapi
+#PyQt5
